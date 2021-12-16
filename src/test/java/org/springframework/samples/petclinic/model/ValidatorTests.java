@@ -46,6 +46,7 @@ class ValidatorTests {
 		Person person = new Person();
 		person.setFirstName("");
 		person.setLastName("smith");
+		person.setAge(30);
 
 		Validator validator = createValidator();
 		Set<ConstraintViolation<Person>> constraintViolations = validator.validate(person);
