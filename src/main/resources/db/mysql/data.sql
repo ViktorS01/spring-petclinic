@@ -1,9 +1,9 @@
-INSERT IGNORE INTO vets VALUES (1, 'James', 'Carter', 28);
-INSERT IGNORE INTO vets VALUES (2, 'Helen', 'Leary', 28);
-INSERT IGNORE INTO vets VALUES (3, 'Linda', 'Douglas', 28);
-INSERT IGNORE INTO vets VALUES (4, 'Rafael', 'Ortega', 28);
-INSERT IGNORE INTO vets VALUES (5, 'Henry', 'Stevens', 28);
-INSERT IGNORE INTO vets VALUES (6, 'Sharon', 'Jenkins', 28);
+INSERT IGNORE INTO vets VALUES (1, 'James', 'Carter', 21);
+INSERT IGNORE INTO vets VALUES (2, 'Helen', 'Leary', 21;
+INSERT IGNORE INTO vets VALUES (3, 'Linda', 'Douglas', 21);
+INSERT IGNORE INTO vets VALUES (4, 'Rafael', 'Ortega', 21);
+INSERT IGNORE INTO vets VALUES (5, 'Henry', 'Stevens', 21);
+INSERT IGNORE INTO vets VALUES (6, 'Sharon', 'Jenkins', 21);
 
 INSERT IGNORE INTO specialties VALUES (1, 'radiology');
 INSERT IGNORE INTO specialties VALUES (2, 'surgery');
