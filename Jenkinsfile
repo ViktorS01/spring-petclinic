@@ -18,10 +18,13 @@ pipeline {
 
         stage('Archive'){
             steps{
-		        zip zipFile: "${BUILD_NUMBER}.zip", archive:false, dir: 'target'
-			    archiveArtifacts artifacts: "${BUILD_NUMBER}.zip"
-		    }
-	    }
+        	    dir('C:\\'){
+        			echo "Current build: ${BUILD_NUMBER}"
+        			zip zipFile: "${BUILD_NUMBER}.zip", archive:false, dir: 'Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\spring-petclinic'
+        			archiveArtifacts artifacts: "${BUILD_NUMBER}.zip"
+        		}
+        	}
+        }
 
         stage('Deploy'){
 		    steps{
