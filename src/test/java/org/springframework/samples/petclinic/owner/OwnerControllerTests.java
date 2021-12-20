@@ -80,7 +80,7 @@ class OwnerControllerTests {
 		george.setAddress("110 W. Liberty St.");
 		george.setCity("Madison");
 		george.setTelephone("6085551023");
-		george.setAge(19);
+		george.setAge(31);
 		Pet max = new Pet();
 		PetType dog = new PetType();
 		dog.setName("dog");
@@ -166,7 +166,7 @@ class OwnerControllerTests {
 				.andExpect(model().attribute("owner", hasProperty("address", is("110 W. Liberty St."))))
 				.andExpect(model().attribute("owner", hasProperty("city", is("Madison"))))
 				.andExpect(model().attribute("owner", hasProperty("telephone", is("6085551023"))))
-				.andExpect(model().attribute("owner", hasProperty("age", is(19))))
+				.andExpect(model().attribute("owner", hasProperty("age", is(31))))
 				.andExpect(view().name("owners/createOrUpdateOwnerForm"));
 	}
 
@@ -196,7 +196,7 @@ class OwnerControllerTests {
 				.andExpect(model().attribute("owner", hasProperty("address", is("110 W. Liberty St."))))
 				.andExpect(model().attribute("owner", hasProperty("city", is("Madison"))))
 				.andExpect(model().attribute("owner", hasProperty("telephone", is("6085551023"))))
-				.andExpect(model().attribute("owner", hasProperty("age", is(19))))
+				.andExpect(model().attribute("owner", hasProperty("age", is(31))))
 				.andExpect(model().attribute("owner", hasProperty("pets", not(empty()))))
 				.andExpect(model().attribute("owner", hasProperty("pets", new BaseMatcher<List<Pet>>() {
 

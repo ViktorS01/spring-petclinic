@@ -56,12 +56,13 @@ class VetControllerTests {
 		james = new Vet();
 		james.setFirstName("James");
 		james.setLastName("Carter");
-		james.setAge(19);
+		james.setAge(21);
 		james.setId(1);
 		helen = new Vet();
 		helen.setFirstName("Helen");
 		helen.setLastName("Leary");
-		helen.setAge(19);
+		helen.setAge(21);
+
 		helen.setId(2);
 		Specialty radiology = new Specialty();
 		radiology.setId(1);
