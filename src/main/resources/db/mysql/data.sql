@@ -1,5 +1,5 @@
 INSERT IGNORE INTO vets VALUES (1, 'James', 'Carter', 19);
-INSERT IGNORE INTO vets VALUES (2, 'Helen', 'Leary', 19;
+-- INSERT IGNORE INTO vets VALUES (2, 'Helen', 'Leary', 19;
 INSERT IGNORE INTO vets VALUES (3, 'Linda', 'Douglas', 19);
 INSERT IGNORE INTO vets VALUES (4, 'Rafael', 'Ortega', 19);
 INSERT IGNORE INTO vets VALUES (5, 'Henry', 'Stevens', 19);
