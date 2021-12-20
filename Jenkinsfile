@@ -27,16 +27,18 @@ pipeline {
         }
 
         stage('Deploy'){
-		    steps{
-			    script{
-				    try
-				    {
-					    bat("md C:\\Deploy\\")
-				    }catch(Exception e){}
-			    }
-			    unzip zipFile: "${BUILD_NUMBER}.zip", dir: 'C:\\Deploy'
-		    }
-	    }
+        		  steps{
+        			  dir('C:\\'){
+        				  script{
+        					  try
+        					  {
+        						  bat("md C:\\Deploy\\")
+        					  }catch(Exception e){}
+        				  }
+        				  unzip zipFile: "${BUILD_NUMBER}.zip", dir: 'C:\\Deploy'
+        			  }
+        		  }
+        }
     }
 
     post {
